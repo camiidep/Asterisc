@@ -49,7 +49,13 @@ body{
 
 }
 
-
+.textoSucursal{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: pink;
+    }
+    
 
 .mapa{
     padding: 2%;
@@ -57,19 +63,6 @@ body{
 
 
 
-.footer {
-    display: flex;
-    justify-content: center;
-
-    font-size: 200%;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    color: white;
-    background-color: black;
-  
-
-}
 .titulo{ display: flex;
     justify-content: center;
     font-size: 300%;
@@ -84,28 +77,17 @@ body{
 .parrafo{
     width: 100px;
 }
-.etiq1{
-width: 100%;
-}
-.etiq2{
-    width: 100%;
-}
+
 .gridSobreNosotros {
     display: grid;
-    grid-template-columns:40% 30% 30% ;
-    grid-template-rows: 250% 250%;
+    grid-template-columns:80% 20% ;
+    grid-template-rows: 100% 100%;
     grid-template-areas: 
-    /*3 columnas y 2 filas*/
-    "sobreNosotros parrafo etiq1"
-    "sobreNosotros parrafo etiq2"
-    ;
+    "sobreNosotros parrafo";
 }
 
 .sobreNosotros {grid-area: sobreNosotros;}
 .parrafo{grid-area: parrafo;}
-.etiq1{grid-area: etiq1;}
-.etiq2{grid-area: etiqu2;}
-
 
 
 /*.card{
@@ -135,7 +117,19 @@ width: 100%;
 
 
 
+.footer {
+    display: flex;
+    justify-content: space-around;
 
+    font-size: 100%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: black ;
+    background-color: white;
+  
+
+}
 
 
 
