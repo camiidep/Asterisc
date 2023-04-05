@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+ background-color: #d7f0c6;
+ width: 100%;
+ min-height: 100vh;
+ padding-bottom: 70px;
+ position: relative;
+}
+ .logoAsterisc{ width: 80px;
+    height: 90px;
+    
+ }
+ ul li a {
+    text-decoration: none;
+ }
+
+ ul li {
+    list-style: none;
+ }
+
+ nav ul {display: flex; 
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navFlex{
+    display: flex;
+    justify-content: center;
+}
+.secciones{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 150%;
+}
+
+.imagenCentral{
+    width: 100%;
+}
+
+.imagenCentralLocales{
+    width: 100%;
+    z-index: 1;
+    opacity: 50%;
+
+}
+
+
+
+.mapa{
+    padding: 2%;
+}
+
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+
+    font-size: 200%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    background-color: black;
+  
+
+}
+.titulo{ display: flex;
+    justify-content: center;
+    font-size: 300%;
+    background-color: #9B1FA3;
+    color: aliceblue;
+    font-family: 'Playfair Display', serif;
+   
+}
+.sobreNosotros{
+    width: 100%;
+}
+.parrafo{
+    width: 100px;
+}
+.etiq1{
+width: 100%;
+}
+.etiq2{
+    width: 100%;
+}
+.gridSobreNosotros {
+    display: grid;
+    grid-template-columns:40% 30% 30% ;
+    grid-template-rows: 250% 250%;
+    grid-template-areas: 
+    /*3 columnas y 2 filas*/
+    "sobreNosotros parrafo etiq1"
+    "sobreNosotros parrafo etiq2"
+    ;
+}
+
+.sobreNosotros {grid-area: sobreNosotros;}
+.parrafo{grid-area: parrafo;}
+.etiq1{grid-area: etiq1;}
+.etiq2{grid-area: etiqu2;}
+
+
+
+/*.card{
+    display: flex;
+    justify-content: center;
+    background-color: antiquewhite;
+    padding: 2%;
+    width: 30%;
+}*/
+.imagen1{
+    width: 30%;
+    min-width: 200px;
+}
+.cardContainer{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    margin-top: 30px;
+   
+    /*display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50% auto;*/
+}
+
+
+
+
+
+
+
+@media (max-width: 900px){
+    .titulo{
+        font-size: 220%;
+    }
+    .footer{
+        font-size: 160%;
+    }
+}
+@media (max-width: 600px){
+    .titulo{
+        font-size: 120%;
+    }
+    .footer{
+        font-size:80% ;
+    }
+   
+}
