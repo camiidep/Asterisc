@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+.logoAsterisc {
+  width: 80px;
+  height: 90px;
+}
+
+ul li a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navFlex {
+  display: flex;
+  justify-content: center;
+}
+
+.imagenCentral {
+  width: 100%;
+}
+
+.titulo {
+  display: flex;
+  justify-content: center;
+  font-size: 300%;
+  background-color: #9B1FA3;
+  color: aliceblue;
+  font-family: "Playfair Display", serif;
+}
+
+.cardContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.imagenCentralLocales {
+  width: 100%;
+  z-index: 1;
+  opacity: 50%;
+}
+
+.textoSucursal {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: pink;
+}
+
+.mapa {
+  padding: 2%;
+}
+
+.sobreNosotros {
+  width: 100%;
+}
+
+.parrafo {
+  width: 100px;
+}
+
+.gridSobreNosotros {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  grid-template-rows: 100% 100%;
+  grid-template-areas: "sobreNosotros parrafo";
+}
+
+.sobreNosotros {
+  grid-area: sobreNosotros;
+}
+
+.parrafo {
+  grid-area: parrafo;
+}
+
+.imagen1 {
+  width: 30%;
+  min-width: 200px;
+}
+
+@media (max-width: 600px) {
+  .titulo {
+    font-size: 120%;
+  }
+  .footer {
+    font-size: 80%;
+  }
+}
+@media (max-width: 900px) {
+  .titulo {
+    font-size: 220%;
+  }
+  .footer {
+    font-size: 160%;
+  }
+}
+.footer {
+  display: flex;
+  justify-content: space-around;
+  font-size: 100%;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: black;
+  background-color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #d7f0c6;
+  width: 100%;
+  min-height: 100vh;
+  padding-bottom: 70px;
+  position: relative;
+}/*# sourceMappingURL=style.css.map */

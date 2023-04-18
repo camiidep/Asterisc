@@ -1,0 +1,17 @@
+.sobreNosotros{
+    width: 100%;
+}
+.parrafo{
+    width: 100px;
+}
+
+.gridSobreNosotros {
+    display: grid;
+    grid-template-columns:80% 20% ;
+    grid-template-rows: 100% 100%;
+    grid-template-areas: 
+    "sobreNosotros parrafo";
+}
+
+.sobreNosotros {grid-area: sobreNosotros;}
+.parrafo{grid-area: parrafo;}

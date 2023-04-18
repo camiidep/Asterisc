@@ -1,0 +1,21 @@
+.logoAsterisc{ width: 80px;
+    height: 90px;
+    
+ }
+ ul li a {
+    text-decoration: none;
+ }
+
+ ul li {
+    list-style: none;
+ }
+
+ nav ul {display: flex; 
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navFlex{
+    display: flex;
+    justify-content: center;
+}
