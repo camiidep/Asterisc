@@ -1,0 +1,41 @@
+.boton{
+    width: 200px;
+    height: 50px;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 10px;
+
+}
+
+.boton-primario{
+@extend .boton;
+background-color: pink;
+color: darkmagenta;
+border: 1px solid lightpink;
+}
+.boton-secundarios{
+    @extend .boton;
+    background-color: lightgreen;
+color: green;
+border:1px solid lightyellow;
+}
+.boton-error{
+    @extend .boton;
+    background-color: red;
+    color: white;
+    border: 1px solid lightcoral;
+}
+.boton-sucess{
+    @extend .boton;
+    background-color: green;
+    color: white;
+}
+.boton-warning{
+    @extend .boton;
+    background-color: orange;
+}
