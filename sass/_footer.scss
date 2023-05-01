@@ -1,13 +1,34 @@
 
 .footer {
-    display: flex; 
-    justify-content: space-around;
-    align-items: center;
-    font-size: 100%;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
     color: black ;
-    background-color: white;
+    background-color: #d7f0c6;
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+}
+
+.asterisco{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    width: 100%;
+}
+
+.redesSociales{
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 15% 15% 15% 15%;
+    grid-template-rows: 100%;
+    justify-items: center;
+    align-items: center;
+
+}
+
+.copyright{
+    align-items: center;
+    font-weight: bold;
 
 }
