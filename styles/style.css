@@ -30,15 +30,32 @@ nav ul {
 .titulo {
   display: flex;
   justify-content: center;
-  font-size: 300%;
+  font-size: 500%;
   background-color: #9B1FA3;
   color: aliceblue;
   font-family: "Playfair Display", serif;
 }
 
-.bannerTitulo {
-  width: 100%;
-  margin: 0%;
+.margenCarousel {
+  margin-top: -8px;
+  margin-bottom: 10px;
+}
+
+.botonEmergente {
+  width: -moz-fit-content;
+  width: fit-content;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: #9B1FA3;
+}
+
+.botonColor {
+  background-color: green;
+}
+
+.botonColor:hover {
+  background-color: #9B1FA3;
 }
 
 .container {
@@ -46,7 +63,7 @@ nav ul {
   height: 100%;
   display: grid;
   grid-template-columns: 33% 33% 33%;
-  grid-template-rows: 50% 50%;
+  grid-template-rows: 33% 33% 33%;
   gap: 25px;
   justify-items: center;
   margin-top: 30px;
@@ -88,21 +105,34 @@ h4 {
   box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
 
-.imagenCentralLocales {
-  width: 100%;
-  z-index: 1;
-  opacity: 50%;
-}
-
 .textoSucursal {
   width: 100%;
   display: flex;
+  justify-content: center;
+  background-color: white;
+  font-size: 150%;
   justify-content: space-around;
-  background-color: pink;
+  margin-top: -8px;
+  align-content: center;
+  padding-top: 7px;
+  font-weight: bolder;
 }
 
 .mapa {
   padding: 2%;
+  height: 90%;
+  width: 100%;
+  display: flex;
+  align-content: center;
+  padding-top: 30px;
+}
+
+.containerLocales {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../imagenes/CARTEL.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .sobreNosotros {
@@ -113,24 +143,39 @@ h4 {
   width: 100px;
 }
 
-.gridSobreNosotros {
-  display: grid;
-  grid-template-columns: 80% 20%;
-  grid-template-rows: 100% 100%;
-  grid-template-areas: "sobreNosotros parrafo";
-}
-
 .sobreNosotros {
-  grid-area: sobreNosotros;
+  display: flex;
+  margin-top: -20px;
 }
 
-.parrafo {
-  grid-area: parrafo;
+.tituloMision {
+  font-size: 300%;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mision {
+  display: flex;
+  justify-content: left;
+  font-size: 100%;
+  align-content: start;
 }
 
 .imagen1 {
   width: 30%;
   min-width: 200px;
+}
+
+.redesCards {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  justify-items: center;
+  gap: 25px;
+  height: 100%;
+  width: 100%;
 }
 
 @media (max-width: 600px) {
@@ -150,6 +195,11 @@ h4 {
   .footer {
     font-size: 80%;
   }
+  .textoSucursal {
+    font-size: 80%;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 @media (max-width: 900px) {
   .titulo {
@@ -160,30 +210,23 @@ h4 {
   }
 }
 .footer {
+  display: flex;
+  justify-content: center;
   color: black;
   background-color: #d7f0c6;
-  height: auto;
+  height: 40%;
   width: 100%;
-  padding-top: 40px;
 }
 
 .asterisco {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  height: auto;
-  width: 100%;
+  height: 100%;
 }
 
 .redesSociales {
-  width: 100%;
-  height: 100%;
-  grid-template-columns: 15% 15% 15% 15%;
-  grid-template-rows: 100%;
-  justify-items: center;
-  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 20%;
 }
 
 .copyright {
@@ -200,8 +243,6 @@ body {
   background-color: #d7f0c6;
   width: 100%;
   min-height: 100vh;
-  padding-bottom: 70px;
-  position: relative;
 }
 
 .boton, .boton-warning, .boton-sucess, .boton-error, .boton-secundarios, .boton-primario {

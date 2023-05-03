@@ -1,19 +1,34 @@
-.imagenCentralLocales{
-    width: 100%;
-    z-index: 1;
-    opacity: 50%;
 
-}
 
 .textoSucursal{
     width: 100%;
     display: flex;
+    justify-content: center;
+    background-color: white;
+    font-size: 150%;
     justify-content: space-around;
-    background-color: pink;
-    }
+    margin-top: -8px;
+    align-content: center;
+    padding-top: 7px;
+    font-weight: bolder;
+}
     
 
 .mapa{
     padding: 2%;
+    height: 90%;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    padding-top: 30px;
 }
+
+.containerLocales{
+    height: 100vh;
+    width: 100%;
+    background-image: url("../imagenes/CARTEL.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 
