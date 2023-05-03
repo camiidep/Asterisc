@@ -48,14 +48,19 @@ nav ul {
   bottom: 10px;
   right: 10px;
   background-color: #9B1FA3;
+  z-index: 999;
+  border-radius: 25%;
 }
 
 .botonColor {
   background-color: green;
+  border: none;
+  color: white;
 }
 
 .botonColor:hover {
   background-color: #9B1FA3;
+  color: white;
 }
 
 .container {
@@ -145,22 +150,36 @@ h4 {
 
 .sobreNosotros {
   display: flex;
-  margin-top: -20px;
+  margin-top: -18px;
 }
 
 .tituloMision {
-  font-size: 300%;
+  font-size: 350%;
   font-weight: bolder;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 4%;
+  color: green;
 }
 
-.mision {
+.misionContainer {
   display: flex;
-  justify-content: left;
-  font-size: 100%;
-  align-content: start;
+  flex-direction: column;
+  align-items: center;
+  padding: 2%;
+  font-size: 120%;
+  justify-content: center;
+  align-items: center;
+}
+
+.misionParrafo {
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  border: 1px;
+  color: green;
+  display: flex;
+  align-items: center;
 }
 
 .imagen1 {

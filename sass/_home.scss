@@ -22,13 +22,21 @@
     bottom: 10px;
     right: 10px;
     background-color: $bg-secundario;
+    z-index: 999;
+    border-radius: 25%;
 
 
 }
 .botonColor{
     background-color: green;
+    border: none;
+    color: white;
+    
+
 }
 
 .botonColor:hover{
     background-color: $bg-secundario;
+    color: white;
 }
+

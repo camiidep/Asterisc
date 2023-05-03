@@ -7,23 +7,38 @@
 
 .sobreNosotros {
     display: flex;
-    margin-top: -20px;
+    margin-top: -18px;
 
 }
 
 
 .tituloMision{
-    font-size: 300%;
+    font-size: 350%;
     font-weight: bolder;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 4%;
+    color: green;
     
 }
 
-.mision{
+
+.misionContainer{
     display: flex;
-    justify-content:left;
-    font-size: 100%;
-    align-content: start;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    font-size: 120%;
+    justify-content: center;
+    align-items: center;
+}
+
+.misionParrafo{
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border: 1px;
+    color: green;
+    display: flex;
+    align-items: center;
 }
