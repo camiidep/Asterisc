@@ -1,5 +1,7 @@
 
-
+.imagenCentral{
+    width: 100%;
+}
 .galeriaImagenes{
 display: grid;
 grid-template-columns: 33% 33% 33%;
@@ -8,7 +10,7 @@ width: 100%;
 height: 90%;
 align-items: center;
 margin-top: 5%;
-padding: 5%;
+padding: 3%;
 gap: 10px;
 justify-content: center;
 
