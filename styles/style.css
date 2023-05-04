@@ -142,14 +142,6 @@ h4 {
 
 .sobreNosotros {
   width: 100%;
-}
-
-.parrafo {
-  width: 100px;
-}
-
-.sobreNosotros {
-  display: flex;
   margin-top: -13px;
 }
 
@@ -181,6 +173,7 @@ h4 {
   color: green;
   display: flex;
   align-items: center;
+  text-align: center;
 }
 
 .galeriaImagenes {
