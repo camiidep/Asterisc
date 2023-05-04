@@ -27,5 +27,15 @@
     display: flex;
     flex-direction: column;
    }
+   .misionContainer{
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-size: 80%;
+   }
+   .tituloMision{
+    font-size: 180%;
+    width: 100%;
+   }
    
 }
